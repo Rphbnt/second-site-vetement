@@ -1,0 +1,142 @@
+header {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+section h2 {
+  font-size: 20px;
+  color: #333;
+}
+section p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+h1 {
+  font-size: 32px;
+  color: #222;
+}
+.img-center {
+  display: block;
+  margin: 20px auto;
+  max-width: 5px;   /* taille normale */
+  height: auto;
+}
+img {
+  max-width: 50%;
+  height: auto;
+}
+p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+p.bold {
+  font-weight: bold;
+}
+p.center {
+  text-align: center;
+}
+p.italic {
+  font-style: italic;
+}
+p.underline {
+  text-decoration: underline;
+}
+.hover-img {
+  width: 300px;              /* taille normale */
+  transition: transform 0.3s ease;
+}
+
+.hover-img:hover {
+  transform: scale(1.1);     /* agrandissement */
+}
+.products {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+}
+
+.product {
+  background: white;
+  width: 220px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product p {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.product span {
+  color: #555;
+}
+
+.product:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 15px 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.cart {
+  max-width: 800px;
+  margin: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cart-item img {
+  width: 80px;
+  border-radius: 8px;
+}

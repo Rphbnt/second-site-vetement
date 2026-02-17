@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Accueil - Ma boutique vetemments</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body style="margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh;">
+        <header><a href="index.html">
+                <img src="https://www.shutterstock.com/image-vector/tshirt-logo-design-concept-clothing-600nw-2351784331.jpg" alt="tshirt-logo-design-concept-clothing-600nw-2351784331" style="width: 100px; height: auto;">
+              </a>
+              </div>
+            <nav>b
+                <div>
+                <a href="Produits/meilleurvente.html">Nos meilleurs ventes</a>
+                <a href="Produits/nouvelle collection.html">Nouvelle collection</a>
+                <a href="Produits/panier.html" id="cart-btn">🛒 Voir mon panier</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="flex: 1;">
+
+  <!-- Vidéo -->
+<div id="video-container" style="width: 100%; height: 80vh; overflow: hidden;">
+  <video
+    src="video.mp4"
+    autoplay
+    muted
+    loop
+    playsinline
+    style="width: 100%; height: 100%; object-fit: cover;">
+  </video>
+</div>
+
+  <script>
+    let videoStarted = false;
+    function playVideo() {
+      if (!videoStarted) {
+        const iframe = document.getElementById('yt-video');
+        iframe.src = iframe.src + '&autoplay=1';
+        videoStarted = true;
+      }
+    }
+  </script>
+
+
+
+<p style="text-align: center; font-weight: bold;">
+  Découvrez notre site web :
+</p>
+<p>Nos meilleurs items :</p>
+<ul class="products">
+  <a href="Produits/T shirtclassique.html">
+  <li class="product">
+    <img src="https://static.pullandbear.net/assets/public/dd87/af3a/8ab444189516/9cf5fe88c75f/07677509800-M/07677509800-M.jpg?ts=1723623577719&w=1050&f=auto">
+    <p>T-shirt classique</p>
+    <span>19,99 €</span>
+  </a>
+  </li>
+
+  <li class="product">
+    <a href="Produits/jeandécontracté.html">
+    <img src="https://static.pullandbear.net/assets/public/7c34/9de3/532e451ab318/92610ce2aabc/07683515434-M/07683515434-M.jpg?ts=1754041058253&w=998&f=auto">
+    <p>Jean décontracté</p>
+    <span>49,99 €</span>
+  </a>
+  </li>
+
+  <li class="product">
+    <a href="Produits/vesteencuire.html">
+    <img src="https://static.pullandbear.net/assets/public/bf18/8002/24e44ef99a89/8b26e548856c/07700558800-M/07700558800-M.jpg?ts=1764173557193&w=541&f=auto">
+    <p>Veste en cuir</p>
+    <span>89,99 €</span>
+  </a>
+  </li>
+</ul>
+<footer style="background-color: #f1f1f1; text-align: center; padding: 15px 0;">
+  &copy; 2024 Ma boutique vêtements. Tous droits réservés.
+</footer>
+  </body>
+</html>
